@@ -1,0 +1,21 @@
+
+spring:
+  batch:
+    initialize-schema: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/techtalks
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+arquivo:
+  nome: teste.txt
+  caminho: C:\\diretorios_git\\spring-batch-sample-techtalks
